@@ -42,8 +42,6 @@ ul li {
 
 img {
   display: block;
-  max-width: 100%;
-  width: 100%;
 }
 
 /* CONTAINER ESTRUTURA */
@@ -62,6 +60,7 @@ img {
   --font-20: 1.25rem;
   --font-24: 1.5rem;
   --font-36: 2.25rem;
+  --font-76: 4.5rem;
   --bg-black: #141414;
   --bg-grey: #1f1f1f;
   --bg-grey-pale: #2b2b2b;
@@ -78,7 +77,6 @@ img {
 .header-estrutura {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .header-estrutura ul {
@@ -93,14 +91,33 @@ img {
   font-size: var(--font-18);
 }
 
+.header-estrutura ul li a:hover {
+  color: #999;
+}
+
+.menu-lateral-mobile .line {
+  width: 30px;
+  height: 3px;
+  background: var(--text-color-white);
+  margin-top: 8px;
+}
+
+.header-estrutura .menu-lateral-mobile {
+  display: none;
+  padding: 0 20px;
+}
+
 /* LOGO  */
+
+.header-estrutura .logo {
+  margin-right: 50px;
+}
 
 .logo a {
   color: var(--text-color-white);
   font-family: var(--font-calistoga);
   font-size: var(--font-36);
-  padding: 35px 20px;
-  margin-right: 60px;
+  padding: 45px 20px;
 }
 
 .logo span {
@@ -122,7 +139,150 @@ img {
   color: var(--text-color-white);
   border: 1px solid var(--text-color-white);
   padding: 15px 40px;
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 0 20px;
   font-size: var(--font-18);
+}
+
+.menu .button:hover {
+  border-color: #999;
+  color: #999;
+}
+
+/* MOBILE HEADER */
+
+@media (max-width: 1020px) {
+  .header .menu {
+    display: none;
+  }
+  .header-estrutura {
+    justify-content: space-between;
+  }
+
+  .header-estrutura .menu-lateral-mobile {
+    display: block;
+  }
+
+  .header-estrutura .logo a {
+    padding: 30px 20px;
+  }
+}
+
+/* HAMBURGUER DELICIOSO */
+
+.hero {
+  background: var(--bg-black);
+  box-shadow: inset 0 -80px var(--bg-grey);
+}
+
+.hero-estrutura {
+  display: flex;
+}
+
+.hero-conteudo {
+  padding: 0 20px;
+  flex: 1;
+}
+
+.hero-estrutura h1 {
+  font-size: var(--font-76);
+  font-family: var(--font-calistoga);
+  line-height: 80px;
+  color: var(--text-color-white);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hero-estrutura p {
+  max-width: 500px;
+  color: var(--text-color-white);
+  font-size: var(--font-18);
+  margin-bottom: 40px;
+}
+
+.hero-estrutura a {
+  display: block;
+  max-width: max-content;
+  background: var(--color-orange);
+  padding: 15px 80px;
+  color: var(--text-color-white);
+  border-radius: 5px;
+  font-size: var(--font-18);
+}
+
+.hero-img {
+  flex: 1;
+  justify-items: center;
+}
+
+.hero-img img {
+  width: auto;
+  height: 600px;
+}
+
+/* RESPONSIVIDADE HAMBURGUER */
+
+@media (max-width: 1020px) {
+  .hero {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-estrutura {
+    flex-direction: column;
+  }
+
+  .hero-conteudo {
+    justify-content: center;
+  }
+
+  .hero-conteudo h1 {
+    text-align: center;
+  }
+
+  .hero-conteudo p {
+    text-align: center;
+    max-width: initial;
+  }
+
+  .hero-conteudo a {
+    margin: 0 auto;
+  }
+
+  .hero-estrutura a {
+    margin-bottom: 50px;
+  }
+
+  .hero-img {
+    margin-bottom: 30px;
+  }
+
+  .hero-img img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img img {
+    height: 350px;
+  }
+
+  .hero-conteudo h1 {
+    font-size: 2.75rem;
+    line-height: 55px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .hero-conteudo p {
+    font-size: 1.2rem;
+  }
+}
+
+/* HAMBURGUER PESQUISA */
+
+.buscar {
+  height: 1000px;
+  background: var(--bg-grey);
 }
