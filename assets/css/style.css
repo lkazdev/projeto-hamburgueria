@@ -70,3 +70,59 @@ img {
 }
 
 /* HEADER  */
+
+.header {
+  background: var(--bg-black);
+}
+
+.header-estrutura {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-estrutura ul {
+  display: flex;
+  gap: 30px;
+}
+
+.header-estrutura ul li a {
+  color: var(--text-color-white);
+  display: block;
+  padding: 12px 20px;
+  font-size: var(--font-18);
+}
+
+/* LOGO  */
+
+.logo a {
+  color: var(--text-color-white);
+  font-family: var(--font-calistoga);
+  font-size: var(--font-36);
+  padding: 35px 20px;
+  margin-right: 60px;
+}
+
+.logo span {
+  color: var(--color-orange);
+  margin: 0 10px;
+}
+
+/* MENU  */
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.menu .button {
+  display: block;
+  color: var(--text-color-white);
+  border: 1px solid var(--text-color-white);
+  padding: 15px 40px;
+  border-radius: 4px;
+  margin: 0 20px;
+  font-size: var(--font-18);
+}
