@@ -1,0 +1,72 @@
+/* CONFIGURAÇÕES GLOBAIS */
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
+}
+
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+button,
+input {
+  border-radius: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* CONTAINER ESTRUTURA */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ROOT */
+
+:root {
+  --font-calistoga: "Calistoga";
+  --font-15: 0.9375rem;
+  --font-18: 1.125rem;
+  --font-20: 1.25rem;
+  --font-24: 1.5rem;
+  --font-36: 2.25rem;
+  --bg-black: #141414;
+  --bg-grey: #1f1f1f;
+  --bg-grey-pale: #2b2b2b;
+  --text-color-white: #fff;
+  --color-orange: #fe6a0f;
+}
+
+/* HEADER  */
